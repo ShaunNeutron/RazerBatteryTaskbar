@@ -5,6 +5,7 @@ const {
     app,
     Tray,
     Menu,
+    Notification,
     nativeImage
 } = require('electron');
 if (require('electron-squirrel-startup')) app.quit();
@@ -69,12 +70,12 @@ function QuitClick(){
 const RazerVendorId = 0x1532;
 const TransactionId = 0x1f
 const RazerProducts = {
-    0x0088: {
-        name: 'Razer Basilisk Ultimate Dongle',
+    0x007B: {
+        name: 'Razer Viper Ultimate Dongle',
         wireless: true
     },
-    0x0086: {
-        name: 'Razer Basilisk Ultimate',
+    0x007A: {
+        name: 'Razer Viper Ultimate',
         wireless: true
     }
 };
